@@ -338,7 +338,7 @@ Room.prototype._onAuth = function(){
 		}, 5000);*/
 	});
 	
-	this.on('frame_end_fw', function(args) {
+	this.on('frame_end_fw', function(_frame) {
 		self._writeLock = false;
 		self.emit('end_fw');
 	});
