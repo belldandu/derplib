@@ -67,6 +67,10 @@ var frameTypesRoom = {
 		return {type: "show_fw"};
 	},
 	
+	end_fw: function() {
+		return {type: "end_fw"};
+	},
+	
 	show_tb: function(seconds) {
 		return {type: "show_tb", time: seconds};
 	},
